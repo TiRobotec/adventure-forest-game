@@ -16,6 +16,12 @@ body {
   display: flex;
 }
 
+.esc {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
 .hide {
   opacity: .1;
 }
