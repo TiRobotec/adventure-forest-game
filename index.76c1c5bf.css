@@ -1,0 +1,153 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  background: repeating-linear-gradient(#0f0a1e, #0f0a1e 2px, #150e29 2px 4px);
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+.hide {
+  opacity: .1;
+}
+
+.hide.flash {
+  display: none !important;
+}
+
+.flash {
+  height: 90px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 #fdff2a, -4px 0 #df4a42, 2px 0 #91fcfe, 4px 0 #4405fc;
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  animation: blink 1s steps(4, start) infinite;
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#indicators {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 #fdff2a, -4px 0 #df4a42, 2px 0 #91fcfe, 4px 0 #4405fc;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  position: fixed;
+  top: calc(50vh - 268px);
+  right: calc(50vw - 492px);
+}
+
+#lives {
+  align-items: flex-start;
+  margin-right: 240px;
+  font-size: 20px;
+  display: flex;
+}
+
+#lives .avatar {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+#lives .x {
+  margin: 0 10px;
+}
+
+.toolset {
+  width: 440px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: calc(50vh - 268px);
+  left: calc(50vw - 492px);
+}
+
+.toolset div {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  border-top: 1px solid #a2cadf;
+  border-bottom: 1px solid #8cb8d7;
+  box-shadow: -1px 0 #fdff2a, -2px 0 #df4a42, 1px 0 #91fcfe, 2px 0 #4405fc;
+}
+
+.toolset div.active {
+  background-color: #ffbf00 !important;
+}
+
+.toolset.day div {
+  background-color: #47d4f7;
+}
+
+.toolset.night div {
+  background-color: #0d1e32;
+}
+
+.toolset.autumn div {
+  background-color: #eea153;
+}
+
+.robot {
+  background-image: url("robot.2f707c9c.png");
+}
+
+.bee {
+  background-image: url("bee.90eda4f7.png");
+}
+
+.beetle {
+  background-image: url("beetle.dfead2f2.png");
+}
+
+.fly {
+  background-image: url("fly.1b22b1f7.png");
+}
+
+.grasshopper {
+  background-image: url("grasshopper.79a67161.png");
+}
+
+.spider {
+  background-image: url("spider.ab8373a0.png");
+}
+
+.stickInsect {
+  background-image: url("stickInsect.964e106d.png");
+}
+
+.waterStrider {
+  background-image: url("waterStrider.85849e5c.png");
+}
+
+.worm {
+  background-image: url("worm.89cab2c9.png");
+}
+
+/*# sourceMappingURL=index.76c1c5bf.css.map */
