@@ -19,9 +19,29 @@ body {
 .esc {
   color: #0c4967;
   font-size: 20px;
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 40px;
+}
+
+.esc.one {
+  top: auto;
+  bottom: 120px;
+}
+
+.esc.two {
+  top: auto;
+  bottom: 80px;
+}
+
+.esc.tre {
+  top: auto;
+  bottom: 40px;
+}
+
+.esc.fou {
+  left: auto;
+  right: 40px;
 }
 
 #sound {
